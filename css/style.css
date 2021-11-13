@@ -1,5 +1,6 @@
 :root {
-    --border-size: 0px;
+    --primary-color: #444444;
+    --secondary-color: #006eb8;
 }
 
 * {
@@ -9,12 +10,20 @@
 }
 
 body {
-    height: 1500px;
-    width: 100vw;
-    font-size: 17px;
     font-family: "Roboto", sans-serif;
-    color: #444;
+    font-size: 17px;
+    color: var(--primary-color);
 }
+
+ul {
+    padding-left: 25px;
+}
+
+a {
+    color: inherit;
+}
+
+/* Headings */
 
 h1 {
     font-size: 3em;
@@ -22,21 +31,18 @@ h1 {
 
 h2 {
     font-size: 1.3em;
-    margin-bottom: 20px;
-    color: rgb(0, 110, 184);
-    text-transform: uppercase;
 }
 
-ul {
-    padding-left: 25px;
+/* Container */
+.container {
+    width: 1000px;
+    margin: auto;
 }
+
+/* Header */
 
 header {
     height: 270px;
-}
-
-a {
-    color: inherit;
 }
 
 .profile-img {
@@ -58,20 +64,20 @@ a {
 header h1 {
     font-family: "Open Sans", sans-serif;
     font-weight: 900;
-    text-align: center;
-    text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
 
     margin-top: 70px;
 }
 
 header h1 > hr {
-    margin: auto;
     width: 3em;
+    margin: auto;
 
     border: none;
-    border-top: 3px solid #444;
+    border-top: 3px solid var(--primary-color);
 }
 
 header h1 > small {
@@ -80,22 +86,10 @@ header h1 > small {
     font-style: italic;
 }
 
-.container {
-    width: 1000px;
-    outline: var(--border-size) solid #000;
-
-/*     outline: 3px solid black; */
-    margin: auto;
-}
+/* Main */
 
 main {
     height: 1200px;
-}
-
-.col {
-    height: 100%;
-    display: inline-block;
-    outline: var(--border-size) solid #000;
 }
 
 .col1 {
@@ -112,6 +106,52 @@ main {
     padding-right: 60px;
 }
 
+/* Sections */
+
+section {
+    margin-bottom: 70px;
+}
+
+section .sub-section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+section:not(.skills) > ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Summary lines */
+
+.summary {
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+
+.summary h3 {
+    display: inline-block;
+    width: 60%;
+    margin-bottom: 5px;
+}
+
+.summary .date {
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+.summary em {
+    font-weight: normal;
+}
+
+/* Personal info container */
+
 .personal-info {
     background-color: #ddd;
     height: 400px;
@@ -126,46 +166,7 @@ main {
     text-decoration: none;
 }
 
-/* Sections */
-section {
-    margin-bottom: 70px;
-}
-
-section:not(.skills) > ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-section .sub-section {
-    margin-bottom: 20px;
-}
-
-section h3 {
-    display: inline-block;
-}
-
-.summary {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.summary h3 {
-    width: 60%;
-    margin-bottom: 5px;
-}
-
-.summary .date {
-    width: 40%;
-    float: right;
-    text-align: right;
-}
-
-.summary em {
-    clear: both;
-    font-weight: normal;
-}
-
-[class^="fa"] {
+.personal-info [class^="fa"] {
     margin: 9px;
     font-size: 1.5em;
 }
