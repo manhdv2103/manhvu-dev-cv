@@ -1,0 +1,171 @@
+:root {
+    --border-size: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1500px;
+    width: 100vw;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    color: #444;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: rgb(0, 110, 184);
+    text-transform: uppercase;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+header {
+    height: 270px;
+}
+
+a {
+    color: inherit;
+}
+
+.profile-img {
+    display: block;
+    position: relative;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    object-position: 0 0%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+header h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.4em;
+
+    margin-top: 70px;
+}
+
+header h1 > hr {
+    margin: auto;
+    width: 3em;
+
+    border: none;
+    border-top: 3px solid #444;
+}
+
+header h1 > small {
+    font-size: 0.5em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.container {
+    width: 1000px;
+    outline: var(--border-size) solid #000;
+
+/*     outline: 3px solid black; */
+    margin: auto;
+}
+
+main {
+    height: 1200px;
+}
+
+.col {
+    height: 100%;
+    display: inline-block;
+    outline: var(--border-size) solid #000;
+}
+
+.col1 {
+    width: 35%;
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.col2 {
+    width: 65%;
+    float: right;
+    padding-left: 30px;
+    padding-right: 60px;
+}
+
+.personal-info {
+    background-color: #ddd;
+    height: 400px;
+
+    margin-top: -125px;
+    padding-top: 125px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.personal-info a {
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    margin-bottom: 70px;
+}
+
+section:not(.skills) > ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section .sub-section {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    display: inline-block;
+}
+
+.summary {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.summary h3 {
+    width: 60%;
+    margin-bottom: 5px;
+}
+
+.summary .date {
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+.summary em {
+    clear: both;
+    font-weight: normal;
+}
+
+[class^="fa"] {
+    margin: 9px;
+    font-size: 1.5em;
+}
