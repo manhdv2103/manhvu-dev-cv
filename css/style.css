@@ -11,7 +11,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    font-size: 17px;
+    font-size: 20px;
     color: var(--primary-color);
 }
 
@@ -155,6 +155,7 @@ section:not(.skills) > ul {
 .personal-info {
     background-color: #ddd;
     height: 400px;
+    font-size: 0.93em;
 
     margin-top: -125px;
     padding-top: 125px;
@@ -168,5 +169,5 @@ section:not(.skills) > ul {
 
 .personal-info [class^="fa"] {
     margin: 9px;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
