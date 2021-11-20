@@ -136,7 +136,7 @@ section:not(.skills) > ul {
 
 .summary h3 {
     display: inline-block;
-    width: 60%;
+    width: 55%;
     margin-bottom: 5px;
 }
 
@@ -144,10 +144,6 @@ section:not(.skills) > ul {
     width: 40%;
     float: right;
     text-align: right;
-}
-
-.summary em {
-    font-weight: normal;
 }
 
 /* Personal info container */
